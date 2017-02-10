@@ -8,7 +8,7 @@ def draw_line( screen, x0, y0, x1, y1, color ):
     while x < x1:
         plot( screen, color, x, len(screen) - y )
         x += 1 
-        y = int(m * x + b) #dont work bc non integer indices
+        y = int(m * x + b)
         
         
 def bresenham_draw_line( screen, x0, y0, x1, y1, color ):

@@ -4,9 +4,9 @@ from draw import *
 def main(x0, y0, x1, y1, color, algo):
     screen = new_screen()
     #color = [ 0, 255, 0 ]
-    if algo == 'b':
+    if algo == 'b': #bresenham
         bresenham_draw_line(screen, x0, y0, x1, y1, color)
-    elif algo == 'm':
+    elif algo == 'm': #my thang
         draw_line(screen, x0, y0, x1, y1, color)
     else:
         print 'error'    
