@@ -33,7 +33,8 @@ def draw_line(screen, x0, y0, x1, y1, color):
     B = -1*dx
 
     #print dy, dx, m, A, B
-    
+#    print "slope: ", m
+
     if m == 'und':
         draw_line_und(screen, x0, y0, x1, y1, color);
     elif (dy >= 0) and (dx >= 0): #QUADRANT I
