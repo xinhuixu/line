@@ -15,7 +15,7 @@ def draw_line( screen, x0, y0, x1, y1, color ):
 
 def draw_line(screen, x0, y0, x1, y1, color):
     if x0 > x1:
-        print "SWAP"
+        #print "SWAP"
         tx = x1
         x1 = x0
         x0 = tx
@@ -32,7 +32,7 @@ def draw_line(screen, x0, y0, x1, y1, color):
     A = dy
     B = -1*dx
 
-    print dy, dx, m, A, B
+    #print dy, dx, m, A, B
     
     if m == 'und':
         draw_line_und(screen, x0, y0, x1, y1, color);
