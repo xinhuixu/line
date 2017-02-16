@@ -19,13 +19,15 @@ def default():
     draw_line(s,org,org,org-125,bottom,[255,0,0]) #VI
     draw_line(s,org,org,org+125,bottom,[255,0,0]) #VII
     draw_line(s,org,org,right,org-125,[255,0,0]) #VIII
-'''
+
 default()
 display(s)
 save_extension(s, 'img.png')
 print "!image saved as img.png"
-'''
-s = new_screen()
+
+
+#s = new_screen()
+
 def gallery():
     #triangle
     draw_line(s,org,org+100,org-85,org-50,[255,255,255])
@@ -36,11 +38,23 @@ def gallery():
     #rainbow
     i = 0
     y = 18
-    while i<15:
-        draw_line(s,org,org+30,right,org+y,[255,0,0])
+    while i<60:
+        if i<10:
+            draw_line(s,org,org+30,right,org+y,[255,0,0])
+        elif i<20:
+            draw_line(s,org,org+30,right,org+y,[255,127,0])
+        elif i<30:
+            draw_line(s,org,org+30,right,org+y,[255,255,0])
+        elif i<40:
+            draw_line(s,org,org+30,right,org+y,[0,255,127])
+        elif i<50:
+            draw_line(s,org,org+30,right,org+y,[0,200,255])
+        else:
+            draw_line(s,org,org+30,right,org+y,[127,0,255])
+            
         y-=1
         i+=1
-
-gallery()
-display(s)
-save_extension(s, 'gal.png')
+        
+#gallery()
+#display(s)
+#save_extension(s, 'gal.png')
